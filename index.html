@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Bar GoXoenea</title>
+<link rel="icon" href="images/logo.png" />
+<style>
+:root{--accent:#b85a36;--wood:#f1e8df;--muted:#6b6b6b}
+*{box-sizing:border-box}body{margin:0;font-family:Inter,Arial,Helvetica,sans-serif;background:var(--wood);color:#222}
+.container{max-width:1100px;margin:0 auto;padding:1rem}
+header{background:#5a3825;color:#fff;padding:1rem 0;text-align:center}
+header .logo{height:64px;vertical-align:middle}
+nav{display:flex;gap:12px;justify-content:center;padding:.6rem 0;background:#fff;border-bottom:1px solid #eee}
+nav a{text-decoration:none;color:#333;font-weight:600}
+.hero{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;padding:2rem 0}
+.hero .text{flex:1;min-width:260px}
+.hero .photo{width:360px;min-width:200px}
+.section{background:#fff;margin:1rem 0;padding:1rem;border-radius:8px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:1rem}
+.card{padding:1rem;background:#faf5ef;border-radius:8px}
+.footer{background:#e9dfd0;padding:1rem;text-align:center;margin-top:1rem}
+.btn{display:inline-block;padding:.6rem 1rem;background:var(--accent);color:#fff;border-radius:6px;text-decoration:none}
+.watermark{position:relative}
+.watermark:before{content:"";position:absolute;inset:0;background:url('images/logo.png') center/350px no-repeat;opacity:.06;pointer-events:none}
+@media(max-width:800px){.hero{flex-direction:column}.hero .photo{width:100%}}
+</style>
+</head>
+<body>
+<header>
+  <div class="container">
+    <img src="images/logo.png" alt="Bar GoXoenea" class="logo" />
+    <h1 style="display:inline-block;margin-left:10px;vertical-align:middle">Bar GoXoenea</h1>
+  </div>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#carta">Carta</a>
+  <a href="#eventos">Eventos</a>
+  <a href="#reservas">Reservas</a>
+  <a href="#galeria">Galería</a>
+  <a href="#contacto">Contacto</a>
+</nav>
+
+<main class="container">
+  <section id="inicio" class="hero section">
+    <div class="text">
+      <h2>Cocina tradicional con toque moderno</h2>
+      <p class="lead">Bar-restaurante en Pamplona. Tapas, pintxos y cócteles en un ambiente moderno y rústico.</p>
+      <p>
+        <a class="btn" href="https://wa.me/34685792308">Reservar por WhatsApp</a>
+        <a class="btn" href="#carta" style="background:#444;margin-left:8px">Ver carta</a>
+      </p>
+    </div>
+    <div class="photo">
+      <!-- placeholder image - replace later -->
+      <img src="images/hero-placeholder.jpg" alt="Interior Bar GoXoenea" style="width:100%;border-radius:8px;object-fit:cover;height:220px" />
+    </div>
+  </section>
+
+  <section id="carta" class="section watermark">
+    <h2>Carta (trabajando en ello)</h2>
+    <p>Estamos actualizando la carta. Pronto podrás ver nuestros platos y precios.</p>
+    <div class="grid">
+      <div class="card"><strong>Patatas bravas</strong><p class="muted">€6.50</p></div>
+      <div class="card"><strong>Montadito</strong><p class="muted">€3.50</p></div>
+      <div class="card"><strong>Tabla de quesos</strong><p class="muted">€12.00</p></div>
+    </div>
+  </section>
+
+  <section id="eventos" class="section">
+    <h2>Eventos</h2>
+    <p>Consulta nuestras próximas noches (música, DJ, catas).</p>
+  </section>
+
+  <section id="reservas" class="section">
+    <h2>Reservas</h2>
+    <p>Reserva por WhatsApp: <a href="https://wa.me/34685792308">685 792 308</a> o llama al teléfono.</p>
+  </section>
+
+  <section id="galeria" class="section">
+    <h2>Galería</h2>
+    <div class="grid">
+      <img src="images/photo1.jpg" alt="foto1" style="width:100%;height:140px;object-fit:cover;border-radius:8px" />
+      <img src="images/photo2.jpg" alt="foto2" style="width:100%;height:140px;object-fit:cover;border-radius:8px" />
+      <img src="images/photo3.jpg" alt="foto3" style="width:100%;height:140px;object-fit:cover;border-radius:8px" />
+    </div>
+  </section>
+
+  <section id="contacto" class="section">
+    <h2>Contacto</h2>
+    <p><strong>Dirección:</strong> Calle Benjamín de Tudela 42 trasera, Pamplona 31008</p>
+    <p><strong>Horario:</strong> Mar–Jue 10:00–22:30 · Vie–Sáb 10:00–23:00 · Dom 10:00–17:00 · Lun cerrado</p>
+    <p><strong>Instagram:</strong> <a href="https://instagram.com/bargoxoenea">@bargoxoenea</a></p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="container">© 2025 Bar GoXoenea</div>
+</footer>
+</body>
+</html>
